@@ -19,6 +19,10 @@ public class HabitacionService {
         return habitacionRepository.findAll();
     }
 
+    public List<Habitacion> findAvailable() {
+        return habitacionRepository.findByDisponibleTrue();
+    }
+
     public Optional<Habitacion> findById(Long id) {
         return habitacionRepository.findById(id);
     }
