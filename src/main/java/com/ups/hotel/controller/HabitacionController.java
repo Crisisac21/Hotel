@@ -21,6 +21,11 @@ public class HabitacionController {
         return habitacionService.findAll();
     }
 
+    @GetMapping("/available")
+    public List<Habitacion> findAvailable() {
+        return habitacionService.findAvailable();
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<Habitacion> findById(@PathVariable Long id) {
         return habitacionService.findById(id)
