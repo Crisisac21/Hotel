@@ -2,6 +2,7 @@ package com.ups.hotel.controller;
 
 import com.ups.hotel.model.Cliente;
 import com.ups.hotel.service.ClienteService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,12 +30,12 @@ public class ClienteController {
     }
 
     @PostMapping
-    public Cliente create(@RequestBody Cliente cliente) {
+    public Cliente create(@Valid @RequestBody Cliente cliente) {
         return clienteService.save(cliente);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Cliente> update(@PathVariable Long id, @RequestBody Cliente cliente) {
+    public ResponseEntity<Cliente> update(@PathVariable Long id, @Valid @RequestBody Cliente cliente) {
         return clienteService.findById(id)
                 .map(existing -> {
                     cliente.setId(existing.getId());
