@@ -1,0 +1,52 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.ups:hotel-reservas-backend >-------------------
+[INFO] Building hotel-reservas-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ hotel-reservas-backend ---
+[INFO] Deleting C:\Users\Christian\OneDrive\Escritorio\Reserva\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hotel-reservas-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ hotel-reservas-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 74 source files with javac [debug release 21] to target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /C:/Users/Christian/OneDrive/Escritorio/Reserva/src/main/java/com/ups/hotel/entity/Cliente.java:[43,27] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /C:/Users/Christian/OneDrive/Escritorio/Reserva/src/main/java/com/ups/hotel/entity/Factura.java:[44,24] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /C:/Users/Christian/OneDrive/Escritorio/Reserva/src/main/java/com/ups/hotel/entity/Habitacion.java:[42,27] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[INFO] 3 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Christian/OneDrive/Escritorio/Reserva/src/main/java/com/ups/hotel/entity/Reserva.java:[40,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.ups.hotel.entity.Reserva
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.992 s
+[INFO] Finished at: 2026-06-28T17:19:32-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project hotel-reservas-backend: Compilation failure
+[ERROR] /C:/Users/Christian/OneDrive/Escritorio/Reserva/src/main/java/com/ups/hotel/entity/Reserva.java:[40,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.ups.hotel.entity.Reserva
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
