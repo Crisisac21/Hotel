@@ -1,0 +1,6 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.6.1\plugins\maven\lib\maven3
+Java version: 21.0.9, vendor: Eclipse Adoptium, runtime: C:\Users\Christian\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\java\21
+Default locale: es_419, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"

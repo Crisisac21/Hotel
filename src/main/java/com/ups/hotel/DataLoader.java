@@ -1,8 +1,8 @@
 package com.ups.hotel;
 
-import com.ups.hotel.model.Cliente;
-import com.ups.hotel.model.Habitacion;
-import com.ups.hotel.model.Reserva;
+import com.ups.hotel.entity.Cliente;
+import com.ups.hotel.entity.Habitacion;
+import com.ups.hotel.entity.Reserva;
 import com.ups.hotel.repository.ClienteRepository;
 import com.ups.hotel.repository.HabitacionRepository;
 import com.ups.hotel.repository.ReservaRepository;

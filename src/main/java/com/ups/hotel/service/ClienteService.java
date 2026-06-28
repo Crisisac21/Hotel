@@ -1,33 +1,14 @@
 package com.ups.hotel.service;
 
-import com.ups.hotel.model.Cliente;
-import com.ups.hotel.repository.ClienteRepository;
-import org.springframework.stereotype.Service;
+import com.ups.hotel.entity.Cliente;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
-public class ClienteService {
-    private final ClienteRepository clienteRepository;
-
-    public ClienteService(ClienteRepository clienteRepository) {
-        this.clienteRepository = clienteRepository;
-    }
-
-    public List<Cliente> findAll() {
-        return clienteRepository.findAll();
-    }
-
-    public Optional<Cliente> findById(Long id) {
-        return clienteRepository.findById(id);
-    }
-
-    public Cliente save(Cliente cliente) {
-        return clienteRepository.save(cliente);
-    }
-
-    public void deleteById(Long id) {
-        clienteRepository.deleteById(id);
-    }
+public interface ClienteService {
+    List<Cliente> findAll();
+    Optional<Cliente> findById(Long id);
+    Cliente save(Cliente cliente);
+    Cliente update(Long id, Cliente cliente);
+    void deleteById(Long id);
 }

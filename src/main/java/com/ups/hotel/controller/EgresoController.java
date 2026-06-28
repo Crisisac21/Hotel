@@ -1,6 +1,6 @@
 package com.ups.hotel.controller;
 
-import com.ups.hotel.model.Egreso;
+import com.ups.hotel.entity.Egreso;
 import com.ups.hotel.service.EgresoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

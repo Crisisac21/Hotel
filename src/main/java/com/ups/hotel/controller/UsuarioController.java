@@ -1,6 +1,6 @@
 package com.ups.hotel.controller;
 
-import com.ups.hotel.model.Usuario;
+import com.ups.hotel.entity.Usuario;
 import com.ups.hotel.service.UsuarioService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

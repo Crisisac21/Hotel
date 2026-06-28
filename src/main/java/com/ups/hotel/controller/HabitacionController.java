@@ -1,6 +1,6 @@
 package com.ups.hotel.controller;
 
-import com.ups.hotel.model.Habitacion;
+import com.ups.hotel.entity.Habitacion;
 import com.ups.hotel.service.HabitacionService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
